@@ -1,0 +1,13 @@
+download Video_Speech_Actor data from https://zenodo.org/records/1188976 and upload them to ravdess_raw folder
+
+pip install -r requirements.txt
+python scripts/prepare_ravdess.py --video_only
+python scripts/extract_faces.py
+python scripts/make_split.py
+python scripts/train_cnn_tf.py
+
+# For LSTM Training and Prediction #
+python scripts/train_lstm_tf.py
+python scripts/predict_video_lstm.py --video "data/manuel_test/02-02-05-01-01-01-01.mp4"    #Unseen Angry video example
+python scripts/visualize_results.py
+python scripts/realtime_demo_lstm.py     #Realtime Demo for LSTM

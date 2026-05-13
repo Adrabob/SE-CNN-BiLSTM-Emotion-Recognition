@@ -1,0 +1,31 @@
+# Dataset and processed data (too large to track)
+data/
+raw_videos/
+processed_faces/
+
+# internal
+internal/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
